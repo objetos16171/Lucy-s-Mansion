@@ -1,19 +1,40 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import java.lang.Class;
+import java.util.List;
 
 /**
  * Write a description of class Muffin here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Aurora) 
+ * @version (1.1.14.11.16)
  */
 public class Muffin extends PowerUp
-{
+{ 
+    private Jugador jug[] = {null}; //Arreglo de imagenes del jugador
+    
     /**
-     * Act - do whatever the Muffin wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * Constructor que coloca la imagen :D
+     * @author Aurora 
+     * @version 1.1.14.11.16
      */
-    public void act() 
+    public Muffin()
     {
-        // Add your action code here.
-    }    
+        super("muffin.png");
+    }
+    
+    /**
+     * Metodo modifica -> modifica los atributos del jugador y el muffin modifica vida de golpe xD 
+     * @author Aurora
+     * @version 1.2.15.11.16
+     */
+    
+    public void modifica()
+    {
+        World w = getWorld(); //Obtiene el mundo de jugador
+        jug[0] = w.getObjects(jugador); //Obtener el objeto jugador
+        jug[0].setAumentoVida(25); //que el jugador modifique su vida de golpe
+        removeTouching(Muffin.class); //Quita el objeto "muffin"
+    }
 }
+
+
