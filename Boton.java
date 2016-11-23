@@ -11,6 +11,6 @@ class Boton extends Actor{
     protected World mundoSig;
     
     protected Boton(String nombreBoton){
-       imagenBoton = new GreenfootImage(nombreBoton);  
+       //imagenBoton = new GreenfootImage(nombreBoton);  
     }
 }

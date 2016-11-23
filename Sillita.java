@@ -8,6 +8,11 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Sillita extends Utileria
 {
+    public Sillita(int x, int y, String cadena)
+    { 
+        super(x, y, cadena);
+    }
+    
     /**
      * Act - do whatever the Sillita wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.

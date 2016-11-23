@@ -2,10 +2,11 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * Es la clase encargada de cargar los escenarios del juego. Los objetos de está clase serán los encargados de
- * decir al mundo si se puede acceder al siguiente mundo (O al que se uiere accesar en todo caso)
+ * decir al mundo si se puede acceder al siguiente mundo (O al que se quiere accesar en todo caso)
+ * Sólo servirá para verificar si se puede pasar, y pa' dibujar una vil puerta/escalera en pantasha
  * 
  * @author Damián "Mad" Martínez
- * @version 0.1
+ * @version 0.5
  */
 class Puerta extends Actor{
     //private int desde;                        // Es el numero de cuarto de donde viene el personaje... o algo asi.
@@ -13,14 +14,16 @@ class Puerta extends Actor{
     private int nivelReq;                       // Es el nivel de la puerta. 0 significa que es de acceso libre.
     private int posX;                           // Posiición d el actor en el eje de las X, dado que nose mmoverá en Y, a menos que salte
     //private boolean side;                     // FALSE para cargar 'to'; TRUE para cargar FROM;
-    private Jugador jugador;                    // Jugador Recibido de Mundo
+    //private Jugador jugador;                  // Jugador Recibido de Mundo
     protected Escenario mundoSiguiente;
     private boolean bloqueo;
     
-    protected Puerta(int haciaD, int nivel){
+    protected Puerta(int haciaD, int nivel, boolean bul)
+    {
         hacia =  haciaD;
         nivelReq = nivel;
-        bloqueo = false;
+        bloqueo = bul;
+        //jugador = player;
     }
     
     /**
@@ -28,17 +31,18 @@ class Puerta extends Actor{
      * Comentarios...
      * 
      */
-    public void act(){
-        if(this.intersects(jugador) && Greenfoot.isKeyDown("up")){
-            setMundoSiguiente();
-        }
+    public void act()
+    {    
+        //if(this.intersects(jugador) && Greenfoot.isKeyDown("up")){
+            //setMundoSiguiente();
+        //}
     }
     
     /**
      * setMundoSiguiente - Este método está encargado de decidir el siguiente mundo a crear, 
      * en base al identificador que recibe el objeto de la clase Puerta por parte
      * del mundo antigüo.
-     */
+     *
     protected void setMundoSiguiente(){
         switch(hacia){
             case 1:     //A la Recepción
@@ -74,5 +78,9 @@ class Puerta extends Actor{
                 mundoSiguiente = new CuartoMaguey("FondoMaguey.png", 1);
                 break;
         }
+    }*/
+    
+    public boolean getBloqueo(){
+        return bloqueo;
     }
 }

@@ -19,7 +19,7 @@ class MenuInstrucciones extends World{
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(850, 480, 1);
         w = new MenuInstrucciones();
-        fondo = new GreenfootImage("Instrucciones.png"); //Guarda imagen en memoria
+        //fondo = new GreenfootImage("Instrucciones.png"); //Guarda imagen en memoria
     }
     
     public void act(){

@@ -8,5 +8,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Mesita extends Utileria
 {
+    public Mesita(int x, int y, String cadena)
+    { 
+        super(x, y, cadena);
+    }
     
 }
