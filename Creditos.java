@@ -8,7 +8,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Creditos extends World
 {
-
+    private GreenfootImage fondo;   //Variable de la imagen "Creditos"
+    private World w;                //Variable de World
+    
     /**
      * Constructor for objects of class Creditos.
      * 
@@ -16,6 +18,17 @@ public class Creditos extends World
     public Creditos()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1); 
+        super(600, 400, 1);
+        fondo = new GreenfootImage("Creditos.png"); //Guarda imagen en memoria
+    }
+    
+     public void act()
+    {
+        setBackground(fondo); //Establece imagen como fondo de pantalla.
+         if(Greenfoot.isKeyDown("enter"))
+        {
+            Greenfoot.setWorld(w);
+            w = new MenuPrincipal();
+        }
     }
 }
