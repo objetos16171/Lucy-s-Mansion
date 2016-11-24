@@ -1,5 +1,4 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-import java.util.List;
 
 /**
  * Write a description of class Pastilla here.
@@ -30,7 +29,7 @@ public class Pastilla extends PowerUp
     {
         Escenario w = (Escenario) getWorld(); //Obtiene el mundo de jugador. 
         jug = w.getJugador(); //Obtener el objeto jugador. 
-        jug.setAumentoVida(1); //Decirle al jugador que modifique su vida cada cierto tiempo.
+        jug.setSalud(1); //Decirle al jugador que modifique su vida cada cierto tiempo.
         w.removeObject(this); //Quita el objeto "Pastilla"(Pastilla.class); //Quita el objeto "Pastilla"
     }
 }

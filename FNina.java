@@ -8,6 +8,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class FNina extends Fantasma
 {
+    public FNina(int atk, int posX, int posY, String nomImg)
+    {
+        super(atk, posX, posY, nomImg);
+    }
     /**
      * Act - do whatever the FNina wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.

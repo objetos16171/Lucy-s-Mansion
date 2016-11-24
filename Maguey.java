@@ -1,6 +1,4 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-import java.lang.String;
-import java.lang.Class;
 
 /**
  * Write a description of class Maguey here.

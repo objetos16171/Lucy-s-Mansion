@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Llave extends Actor
+public class Llave extends PowerUp
 {
     /**
      * Act - do whatever the Llave wants to do. This method is called whenever

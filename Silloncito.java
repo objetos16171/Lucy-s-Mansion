@@ -1,6 +1,4 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-import java.lang.String;
-import java.lang.Class;
 
 /**
  * Write a description of class Silloncito here.
@@ -40,13 +38,13 @@ public class Silloncito extends Utileria
     {
        int aleatorio = Greenfoot.getRandomNumber(5);
        
-	   if(aleatorio == 1)
+       if(aleatorio == 1)
        {
-          	 getWorld().addObject(new Pastilla(), 200, 200);
+             getWorld().addObject(new Pastilla(), 200, 200);
        }
        else if(aleatorio == 0)
        {
-      		getWorld().addObject(new Muffin(), 200, 200);
+            getWorld().addObject(new Muffin(), 200, 200);
        }
        
        getWorld().removeObject(this);
@@ -57,10 +55,10 @@ public class Silloncito extends Utileria
         if(isTouching(Jugador.class))
             {
                 danio++;
-                    if(danio >= 3)
-                    {
-                       sillonDestruido();
-                    }
+                if(danio >= 3)
+                {
+                    sillonDestruido();
+                }
             }
     }
 }

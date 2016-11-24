@@ -1,6 +1,4 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-import java.lang.Class;
-import java.util.List;
 
 /**
  * Write a description of class Muffin here.
@@ -32,7 +30,7 @@ public class Muffin extends PowerUp
     {
         Escenario w = (Escenario) getWorld(); //Obtiene el mundo de jugador. 
         jug = w.getJugador(); //Obtener el objeto jugador.
-        jug.setAumentoVida(5); //que el jugador modifique su vida de golpe
+        jug.setSalud(5); //que el jugador modifique su vida de golpe
         w.removeObject(this); //Quita el objeto "muffin"
     }
 }

@@ -22,11 +22,12 @@ class Escenario extends World{
      * Constructor de objetos de la clase Escenario.
      * 
      */
-    protected Escenario(String nombreFondo, int numPuertas, Jugador jug){    
+    protected Escenario(String nombreFondo, int numPuertas, Jugador jug)
+    {    
         super(850, 480, 1);                         //Crea un mundo de 850 x 480
         noPuertas = numPuertas;                     //El número de puertas que tendrá el mundo, pa no desperdiciar memoria  
         player = jug;                               //El jugador que se irá pasando de mundo en mundo
-        fondo = new GreenfootImage(nombreFondo);    //Pos el fondo del escenario wey!
+        //fondo = new GreenfootImage(nombreFondo);    //Pos el fondo del escenario wey!
     }
     
     /**
@@ -34,23 +35,40 @@ class Escenario extends World{
      *  El parametro direccion sera 1 o -1, representando que 1 se rein ician las posiciones a la 
      *  derecha y -1 reinicia las posiciones a la izquierda.
      */
-    protected void reubicaJugador(int direccion){
-        if(direccion < 0){
+    protected void reubicaJugador(int direccion)
+    {
+        if(direccion < 0)
+        {
             player.setUbicacion(10);          //A la izquierda del escenario
-        }else{
+        }
+        else
+        {
             player.setUbicacion(800);         //A la derecha del escenario
         }
     }
     
-    protected Puerta[] getArregloPuertas(){
+    protected Puerta[] getArregloPuertas()
+    {
         return puertas;
     }
     
-    protected void setArregloPuertas(Puerta[] arrayPuertas){
+    protected void setArregloPuertas(Puerta[] arrayPuertas)
+    {
         puertas = arrayPuertas;        
     }
     
-    protected int getNumeroPuertas(){
+    protected int getNumeroPuertas()
+    {
         return noPuertas;
+    }
+    
+    public Jugador getJugador()
+    {
+        return player;
+    }
+    
+    public void setJugador(Jugador jugador)
+    {
+        player = jugador;
     }
 }
