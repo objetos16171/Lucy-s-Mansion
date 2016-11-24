@@ -10,7 +10,7 @@ import java.util.List;
  */
 public class Muffin extends PowerUp
 { 
-    private Jugador jug[] = {null}; //Arreglo de imagenes del jugador
+    private Jugador jug; //Apuntador del jugador
     
     /**
      * Constructor que coloca la imagen :D
@@ -19,7 +19,7 @@ public class Muffin extends PowerUp
      */
     public Muffin()
     {
-        super("muffin.png");
+        super("muffin.png"); //Colocar imagen del muffin.
     }
     
     /**
@@ -30,11 +30,9 @@ public class Muffin extends PowerUp
     
     public void modifica()
     {
-        World w = getWorld(); //Obtiene el mundo de jugador
-        jug[0] = w.getObjects(jugador); //Obtener el objeto jugador
-        jug[0].setAumentoVida(25); //que el jugador modifique su vida de golpe
-        removeTouching(Muffin.class); //Quita el objeto "muffin"
+        Escenario w = (Escenario) getWorld(); //Obtiene el mundo de jugador. 
+        jug = w.getJugador(); //Obtener el objeto jugador.
+        jug.setAumentoVida(5); //que el jugador modifique su vida de golpe
+        w.removeObject(this); //Quita el objeto "muffin"
     }
 }
-
-
