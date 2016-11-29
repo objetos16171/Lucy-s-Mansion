@@ -2,20 +2,17 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * Write a description of class Maguey here.
- * 
  * @author Aurora 
  * @version 1.2.21.11.16
  */
 public class Maguey extends Utileria
 {
-    private int danio = 0;
-    
     /**
      *  Constructor que coloca la imagen nwn
      *  @author Aurora
-     *  @version 1.2.21.11.16
+     *  @version 1.3.23.11.16
      */
-    public Maguey()
+    public Maguey(String cadena)
     {
         super("maguey.png");   
     }
@@ -38,17 +35,5 @@ public class Maguey extends Utileria
     {
 		getWorld().addObject(new Llave(), 200, 200);
 		getWorld().removeObject(this);
-    }
-    
-    public void getDanio()
-    {
-        if(isTouching(Jugador.class))
-        {
-            danio++;
-            if(danio >= 3)
-            {
-                getMagueyDestruido();
-            }
-        }
     }
 }
