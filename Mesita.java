@@ -1,6 +1,4 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-import java.lang.String;
-import java.lang.Class;
 
 /**
  * Write a description of class Mesita here.
@@ -9,15 +7,13 @@ import java.lang.Class;
  * @version 1.2.21.11.16
  */
 public class Mesita extends Utileria
-{
-    private int danio = 0;
-    
+{   
     /**
      *  Constructor que coloca la imagen nwn
      *  @author Aurora
-     *  @version 1.2.21.11.16
+     *  @version 1.3.23.11.16
      */
-    public Mesita()
+    public Mesita(String cadena)
     {
         super("mesa.png");   
     }
@@ -50,17 +46,5 @@ public class Mesita extends Utileria
        	}
       
       getWorld().removeObject(this);				
-    }
-    
-    public void getDanio()
-    {
-        if(isTouching(Jugador.class))
-            {
-                danio++;
-                    if(danio >= 3)
-                    {
-                        mesaDestruida();
-                    }
-            }
     }
 }
