@@ -8,14 +8,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Silloncito extends Utileria
 {
-    private int danio = 0;
-
     /**
      *  Constructor que coloca la imagen nwn
      *  @author Aurora
-     *  @version 1.2.21.11.16
+     *  @version 1.3.23.11.16
      */
-    public Silloncito()
+    public Silloncito(String cadena)
     {
         super("sofá.png");
     }
@@ -48,17 +46,5 @@ public class Silloncito extends Utileria
        }
        
        getWorld().removeObject(this);
-    }
-    
-    public void getDanio()
-    {
-        if(isTouching(Jugador.class))
-            {
-                danio++;
-                if(danio >= 3)
-                {
-                    sillonDestruido();
-                }
-            }
     }
 }
