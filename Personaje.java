@@ -9,92 +9,68 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * 
  * @version 1.0:30.10.16
  */
-class Personaje extends Actor
-{
+class Personaje extends Actor{
     protected int ataque;                       //Capacidad que tiene cada fantasma para golpear
-    protected boolean isAttack;                  //Boleano para saber si está atacando
     protected int pV = 10;                      //puntos de vida restantes al jugador
     protected final int salud = 10;             //puntos de vida Totales
     protected int posX;                         //Posición del jugador en X
     protected int posY;                         //Posicion del jugador en Y
     protected GreenfootImage imagenPersonaje;   //Imagen del personaje
+    protected int nvLlave;                      //Variable para el nivel de la llave
     
     public Personaje(int atk, int posX, int posY, String nomImg)
     {
         ataque = atk;
-        isAttack = false;
-        //imagenPersonaje = new GreenfootImage(nomImg);
+        nvLlave = 0;
+        imagenPersonaje = new GreenfootImage(nomImg);
     }
     
-    /**
-     * muevete - Método que usan los personajes para moverse, cada personaje se mueve de manera diferente
-     */
-    void muevete()
-    {;}
+    void muevete(){;}
     
-    /**
-     * disparo - Todo los personajes disparan (escupen), pero escupen de manera distinta (al 20 de nov de 2016 creo eso, probablemente sea falso)
-     */
-    void disparo()
-    {;}
+    void disparo(){;}
     
-    /**
-     * recibeDanio - Es daño, pero no quiero problemas con la ñ y cosas así...
-     * Me distraigo: todos los personajes reciben daño de una cierta manerea, igual que arriba, a este dia 20 de nov creo que reciben ddaño de manera distinta, pero
-     * mientras escribo esto creo que no es así
-     */
-    void recibeDanio(int danio)
-    {;}
+    void recibeDanio(int danio){;}
     
-    /**
-     * setUbicacion - Para colocar al personaje en un cierto lugar, creo que con el addObjetc() esto puede ser eliminado
-     */
     void setUbicacion(int lugar)
     {
         posX = lugar;
     }
     
-    /**
-     *  getUbicacion -  Para saber en que lugar está el objeto, igual creo que sobra...
-     *  los odio a todos...
-     *  y a mi vida
-     *  ojalá fuese broma eso
-     */
     int getUbicacion()
     {
         return posX;
     }
     
-    /**
-     * setSalud - Modifica el atributo de salud, principalmente al jugador, los fantasmas, sería curioso que tambien recuperasen salud
-     * 
-     */
     void setSalud(int nuevaSalu)
     {
         pV = pV + nuevaSalu;
     }
     
-    /**
-     * getSalud - Pa' saber que tanta salud tienen los personajes en todo momento y poderla expresar en pantalla
-     */
     int getSalud()
     {
         return pV;
     }
     
-    /**
-     * getIsAttack - Para preguntarle al jugador si está haciendo daño (En retrospectiva eso se escucha estúpido, pero tiene sentido)
-     */
-    boolean getIsAttack()
+    int getNvLlave()
     {
-        return isAttack;
+        return nvLlave;
     }
     
     /**
-     * setAnimación - Para modificar la animación que se reproduce en pantalla, dependiendo de la acción
+     * @author Aurora
+     * @version 1.1.23.11.16
+     * Método para modificar la vida del personaje.
      */
-    void setAnimacion(String animacion)
+    int setAumentoVida(int nuevaVida) 
     {
-        //Aqui cambiara de animación, y no avanzará hasta que termine
+        pV += nuevaVida;    
+        if(pV > 10)  //Si los puntos de vida son ¿mayor? que 10
+        {
+            pV = 10;  //Los puntos de vida son igual a 10
+        }
+        else if(pv < 0) //Si los pV son ¿menores? a 0
+        {
+            pV = 0; //Los pV son igual a 0
+        }
     }
 }
