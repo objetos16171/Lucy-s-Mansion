@@ -1,30 +1,34 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Clase menú intrucciones, se encarga de dibujar el menu de instrucciones. y ya, lo juro :'v
+ * -----------------------------TERMINADA------------------------------------
+ * Clase menú intrucciones, se encarga de dibujar el menu de instrucciones y ya.
  * 
- * @author Aurora "Hoshi" Gonzale
+ * @author Aurora "Hoshi" Gonzales
  * @version 1.0.15.11.16 
  */
-class MenuInstrucciones extends World{
+class MenuInstrucciones extends World
+{
     private GreenfootImage fondo;   //Variable de la imagen "instrucciones"
     private World w;                //Variable de World
     
     /**
-     * Constructor for objects of class MenuInstrucciones.
-     * author
-     * version 1.0.07.11.16
+     * Constructor de objetos de la clase MenuInstrucciones.
      */
-    public MenuInstrucciones(){    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+    public MenuInstrucciones()
+    {   
         super(850, 480, 1);
-        w = new MenuInstrucciones();
-        //fondo = new GreenfootImage("Instrucciones.png"); //Guarda imagen en memoria
     }
     
-    public void act(){
+    /**
+     * act - El ciclo principal que repetira una y otra vez
+     */
+    public void act()
+    {
         setBackground(fondo); //Establece imagen como fondo de pantalla.
-        if(Greenfoot.isKeyDown("enter")){
+        
+        if(Greenfoot.isKeyDown("enter"))
+        {
             w = new MenuPrincipal();
             Greenfoot.setWorld(w);
         }

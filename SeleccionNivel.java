@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class SeleccionNivel here.
+ * Esta clase muetra los botones y el fondo para la selección de nivel.
  * 
  * @author Damián "Mad" Martínez
  * @author Aurora "Hoshi" Gonzalez
@@ -30,7 +30,7 @@ class SeleccionNivel extends World
     }
     
     /**
-     *
+     * act - Ciclo principa, aquí va lo que se quiere que el mundo/actores hagan
      */
     public void act()
     {

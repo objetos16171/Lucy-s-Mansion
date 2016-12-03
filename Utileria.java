@@ -5,35 +5,41 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * 
  * @author Damián "Mad" Martínez
  * @author Aurora "Hoshi" Gonzalez
- * @author Lucy "LadyBug" Cárdenas
+ * //@author Lucy "LadyBug" Cárdenas
+ * @author Daniel Wong :v ... no te daras cuenta maldito :v;
  * 
  * @version 1.0:03.11.16
  */
+
 public class Utileria extends Actor
 {
-    protected int ubicacionX;
-    protected int ubicacionY;
-    protected GreenfootImage imagenMueble;
-    private Jugador player;
+    protected GreenfootImage imagenMueble;  //Variable para imagen
+    private Jugador player; //Variable para el player de tipo Jugador
    
-    public Utileria(int x, int y, String cadena)
+    /**
+     * Constructor que recibe una cadena como parámetro
+     * @author Aurora
+     * @version 1.2.28.11.16
+     */
+    public Utileria(String cadena)  
     { 
-        ubicacionX = x;
-        ubicacionY = y;
-        //imagenMueble = new GreenfootImage(cadena);
+        imagenMueble =  new GreenfootImage(cadena);
     }
         
+    /**
+     * Act Method
+     * @author Aurora
+     * @version 1.2.28.11.16
+     */
     public void act()
     {  
         if(isTouching(Jugador.class))
         {
-            Escenario w =(Escenario) getWorld();
+            Escenario w =(Escenario) getWorld();    
             player = w.getJugador();
             if(player.getIsAttack())
                 destruye();
         }
-        else if(isTouching(Disparo.class))
-           destruye();
     }
   
     /**
@@ -49,38 +55,35 @@ public class Utileria extends Actor
         int aleatorio = Greenfoot.getRandomNumber(100);
         if(aleatorio < 10)
         {
-             getWorld().addObject(new Pastilla(), ubicacionX, ubicacionY);
+             getWorld().addObject(new Pastilla(), this.getX(), this.getY());
         }
         else if(aleatorio > 10 && aleatorio < 20)
         {
-             getWorld().addObject(new Muffin(), ubicacionX, ubicacionY);
+             getWorld().addObject(new Muffin(), getX(), getY());
         }
     }    
     
     /**
-     * Explota
-     * sirve para checar que si el objeto recibe 3 golpes se destruya   
-     * se elimina la mesita, la sillita,el silloncito,el maguey.        
-     * @author Lucy Cárdenas
-     * 
-     * @version 16.11.16 
+     * Método explota. 
+     * Coloca imagen de explosión y elimina el objeto
+     * @author Aurora
+     * @version 1.1.23.11.16
      */
     public void explota()
     {
-        imagenMueble = new GreenfootImage("explosion.png");
-        getWorld().repaint();
-        getWorld().removeObject(this);
-       //Luego se elimina de memoria;
+        imagenMueble = new GreenfootImage("explosion.png"); //Imagen de la explosión
+        getWorld().repaint();   //Repintar el mundo
+        getWorld().removeObject(this);  //Remueve ese objeto
     }
     
     /**
-     * destruye - Se encarga de destruir el objeto, en animacion y en memoria
-     * También se encarga de ver si se tira algún objeto
+     * Método destruye.
+     * @author Aurora
+     * @version 1.1.23.11.16
      */
-    private void destruye()
+    public void destruye()
     {
-        dropObj();
-        explota();
+        dropObj();  //Manda a llamar al método dropObj
+        explota();  //Manda a llamar al método explota
     }
 }    
-            

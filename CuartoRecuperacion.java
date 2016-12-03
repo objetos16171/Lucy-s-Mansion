@@ -11,7 +11,9 @@ public class CuartoRecuperacion extends Escenario{
      * Constructor for objects of class Sala.
      * 
      */
-    public CuartoRecuperacion(String nombreFondo, int numPuertas, Jugador jug){
-        super(nombreFondo, numPuertas, jug);        
+    public CuartoRecuperacion()
+    {
+        super("FondoRecuperacion.png");  
     }
 }
+

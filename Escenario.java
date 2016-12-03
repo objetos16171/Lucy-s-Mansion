@@ -12,22 +12,20 @@ import greenfoot.*;                                 // (World, Actor, GreenfootI
  * 
  * @version 1.0:31.10.16
  */
-class Escenario extends World{
-    private GreenfootImage fondo;                   //fondo de las imágenes en un munto
-    private int noPuertas;                          //Numero de puertas que tendrá el escenario
-    private Puerta[] puertas;                       //Arreglo para la cantidad de puertas que se usarán, que según mis cálculos son 4
-    private Jugador player;                         //Jugador, se agregará cuando el jugador llegue al mundo, siempre existirá
+class Escenario extends World
+{
+    protected int noPuertas;                          // Numero de puertas que tendrá el escenario
+    protected Puerta[] puertas;                       // Arreglo para la cantidad de puertas que se usarán, que según mis cálculos son 4
+    protected Jugador player;                         // Jugador, se agregará cuando el jugador llegue al mundo, siempre existirá
     
     /**
      * Constructor de objetos de la clase Escenario.
      * 
      */
-    protected Escenario(String nombreFondo, int numPuertas, Jugador jug)
+    public Escenario(String nombreFondo)
     {    
         super(850, 480, 1);                         //Crea un mundo de 850 x 480
-        noPuertas = numPuertas;                     //El número de puertas que tendrá el mundo, pa no desperdiciar memoria  
-        player = jug;                               //El jugador que se irá pasando de mundo en mundo
-        fondo = new GreenfootImage(nombreFondo);    //Pos el fondo del escenario wey!
+        setBackground(nombreFondo);                 //Pos el fondo del escenario wey!
     }
     
     /**
@@ -39,11 +37,11 @@ class Escenario extends World{
     {
         if(direccion < 0)
         {
-            player.setUbicacion(10);          //A la izquierda del escenario
+            player.setUbicacionX(10);          //A la izquierda del escenario
         }
         else
         {
-            player.setUbicacion(800);         //A la derecha del escenario
+            player.setUbicacionX(800);         //A la derecha del escenario
         }
     }
     
@@ -62,13 +60,19 @@ class Escenario extends World{
         return noPuertas;
     }
     
-    public Jugador getJugador()
+    protected Jugador getJugador()
     {
         return player;
     }
     
-    public void setJugador(Jugador jugador)
+    protected void setJugador(Jugador jugador)
     {
-        player = jugador;
+       player = jugador;
     }
+    
+    protected void iniciaPuertas()
+    {;}
+    
+    protected void colocaPuertas()
+    {;}
 }

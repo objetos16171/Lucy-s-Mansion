@@ -1,4 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import java.util.List;
 
 /**
  * Superclase de personaje, de aquí heredarán métodos y atributos las clases de Jugador y Fantasma.
@@ -11,58 +12,55 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 class Personaje extends Actor
 {
-    protected int ataque;                       //Capacidad que tiene cada fantasma para golpear
-    protected boolean isAttack;                  //Boleano para saber si está atacando
-    protected int pV = 10;                      //puntos de vida restantes al jugador
-    protected final int salud = 10;             //puntos de vida Totales
-    protected int posX;                         //Posición del jugador en X
-    protected int posY;                         //Posicion del jugador en Y
-    protected GreenfootImage imagenPersonaje;   //Imagen del personaje
+    private String anStdDer;
+    private String anStdIzq;
+    private String anAtkDer;
+    private String anAtkIzq;
+    private String anMovDer;
+    private String anMovIzq;
     
-    public Personaje(int atk, int posX, int posY, String nomImg)
+    protected GifImage anActual;        //Animacion actual del personaje
+    protected List<GreenfootImage> gif; //Lista de imagenes que poseera el gif de la animacion actual.
+    
+    private int posicionEnLista;        // Es el contador para la variable gif
+    protected int ataque;               //Capacidad que tiene cada fantasma para golpear
+    protected int pV;                   //puntos de vida restantes al jugador
+    protected int direccion;            //1= DERECHA, -1=IZQUIERDA;
+    
+    protected final int salud = 10;     //puntos de vida Totales
+    
+    protected boolean isAttack;         //Boleano para saber si está atacando
+    
+    public Personaje(int atk, String stdDer, String stdIzq, String atkDer, String atkIzq, String movDer, String movIzq)
     {
+        anStdDer = stdDer;  anStdIzq = stdIzq;
+        anAtkDer = atkDer;  anAtkIzq = atkIzq;
+        anMovDer = movDer;  anMovIzq = movIzq;
         ataque = atk;
+        
+        pV = salud;
         isAttack = false;
-        //imagenPersonaje = new GreenfootImage(nomImg);
+        direccion = 1;
+        anActual = new GifImage(anStdDer);
+        gif = null;
     }
     
     /**
      * muevete - Método que usan los personajes para moverse, cada personaje se mueve de manera diferente
      */
     void muevete()
-    {;}
-    
-    /**
-     * disparo - Todo los personajes disparan (escupen), pero escupen de manera distinta (al 20 de nov de 2016 creo eso, probablemente sea falso)
-     */
-    void disparo()
-    {;}
-    
-    /**
-     * recibeDanio - Es daño, pero no quiero problemas con la ñ y cosas así...
-     * Me distraigo: todos los personajes reciben daño de una cierta manerea, igual que arriba, a este dia 20 de nov creo que reciben ddaño de manera distinta, pero
-     * mientras escribo esto creo que no es así
-     */
-    void recibeDanio(int danio)
-    {;}
-    
-    /**
-     * setUbicacion - Para colocar al personaje en un cierto lugar, creo que con el addObjetc() esto puede ser eliminado
-     */
-    void setUbicacion(int lugar)
     {
-        posX = lugar;
+        setImage(anActual.getCurrentImage());
+        move(10*direccion);
     }
     
     /**
-     *  getUbicacion -  Para saber en que lugar está el objeto, igual creo que sobra...
-     *  los odio a todos...
-     *  y a mi vida
-     *  ojalá fuese broma eso
+     * disparo - Todo los personajes disparan (escupen), pero escupen de manera distinta (al 20 de nov de 2016 creo eso, probablemente sea falso)
+     * 
      */
-    int getUbicacion()
+    boolean disparo()
     {
-        return posX;
+        ;
     }
     
     /**
@@ -91,10 +89,37 @@ class Personaje extends Actor
     }
     
     /**
-     * setAnimación - Para modificar la animación que se reproduce en pantalla, dependiendo de la acción
+     *  El metodo va a cambiar la animacion actual por la de ataque, y va a depender de la direccion que tenga. Ademas, va a cargar las imagenes de la animacion
+     *  actual a la variable gif(que es un arreglo de imagenes), y luego va a liberar la animacion actual.
      */
-    void setAnimacion(String animacion)
+    void setAnAtk()
     {
-        //Aqui cambiara de animación, y no avanzará hasta que termine
+        if(direccion == 1)
+        {
+            anActual = new GifImage(anAtkDer);
+        }
+        else
+        {
+            anActual = new GifImage(anAtkIzq);
+        }
+        
+        gif = anActual.getImages();
+        anActual = null;
     }
+    
+    /**
+     *  Este metodo va a poner la animacion de movimiento como la actual, igual va a depender de la direccion del personaje
+     */
+    void setAnMov()
+    {
+        if(direccion ==1)
+        {
+            anActual = new GifImage(anMovDer);
+        }
+        else
+        {
+            anActual = new GifImage(anMovIzq);
+        }
+    }
+    
 }

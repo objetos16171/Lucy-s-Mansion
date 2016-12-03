@@ -1,27 +1,23 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Escenaio de recepcion, 
+ * -------------------------------------TERMINADA------------------------------------------------
+ * Escenaio de recepcion, Muestra la historia y es el primer escenario en el que el jugador tendrá contacto. 
  * 
- * @author d WONG :V NO TE DARAS CUENTA :V
- * @version (a version number or a date)
+ * @author Damian "Mad" Martínez
+ * @version 1.8:30.11.16
  */
 class Recepcion extends Escenario
 {
-    private Puerta[] puertasRecepcion;      //Arreglo de puertas que tendrá el Escenaio... Esto debe estar en Escenario
-    private boolean historia;               //Para saber si la historia ya se ha presentado, de ser falso, la historia se presentará
-    private Jugador player;
-    
     /**
      * Este es el constructor de la recepción.
      * 
      */
-    Recepcion(String nombreFondo, int numPuertas, Jugador jug, boolean historia)
+    Recepcion()
     {
-        super(nombreFondo, numPuertas, jug);
+        super("FondoRecepcion.png");
         iniciaPuertas();
-        this.historia = historia;
-        player = jug;
+        colocaPuertas();
     }
     
     /**
@@ -30,15 +26,13 @@ class Recepcion extends Escenario
      */
     public void act() 
     {
-        if(historia == false)//Significa que no ha mostrado ningún texto y debe de volverse a crear; Nota: Debe resolverse que el usuario entra y vuelve a pasar la historia
+        if(player.getNivel() == -1)//Significa que no ha mostrado ningún texto y debe de volverse a crear; Nota: Debe resolverse que el usuario entra y vuelve a pasar la historia
         {
-            muestraHistoria();
-            historia = true;
+            muestraHistoria();                  //Muestra la historia por que el jugador estará haciendo todo por primera vez
+            player.setNivel(0);                 //Aqui es donde el nivel se hace 0 para comenzar el juego
+            addObject(player, 425, 330);        //Colocará al jugador en una posicion en X al medio, y en Y a una altura de 150 de la parte baja
         }
-        else
-        {
-            addObject(player, player.getX(), player.getY());
-        }
+        
     }    
         
     /**
@@ -46,15 +40,13 @@ class Recepcion extends Escenario
      * Sólo las mantiene preparadas.
      * 
      */
-    private void iniciaPuertas()
+    protected void iniciaPuertas()
     {
-        puertasRecepcion = getArregloPuertas();
-        puertasRecepcion[0] = new Puerta(2, 0, false); //Puerta 0, que va al pasillo 1, se requieren 0 llaves para entrar
-        puertasRecepcion[1] = new Puerta(2, 2, true);  //Puerta 1, que va al pasillo 2, se requieren 2 llaves para entrar
-        puertasRecepcion[2] = new Puerta(2, 2, true);  //Puerta 2, que va al pasillo 3, escalera, no sube hasta ser nivel 2
-        puertasRecepcion[3] = new Puerta(3, 1, true);  //Puerta 3, que va al cuarto 2, requiere nivel 1 para entrar
-        puertasRecepcion[4] = new Puerta(5, 1, true);  //Puerta 4, que va al cuarto de recuperacion, requiere nivel 1 para entrar
-        setArregloPuertas(puertasRecepcion);
+        puertas[0] = new Puerta(2, 1, 0);  //Puerta 0, que va al pasillo 1, se requieren 0 llaves para entrar
+        puertas[1] = new Puerta(2, 2, 2);  //Puerta 1, que va al pasillo 2, se requieren 2 llaves para entrar
+        puertas[2] = new Puerta(2, 3, 2);  //Puerta 2, que va al pasillo 3, escalera, no sube hasta ser nivel 2
+        puertas[3] = new Puerta(3, 2, 1);  //Puerta 3, que va al cuarto 2, requiere nivel 1 para entrar
+        puertas[4] = new Puerta(5, 1, 1);  //Puerta 4, que va al cuarto de recuperacion, requiere nivel 1 para entrar
     }
     
     /**
@@ -69,11 +61,23 @@ class Recepcion extends Escenario
     /**
      * muestraHistoria - se encarga de mostrar globos de testo con la historia principal, y un wongsote
      */
-    private void muestraHistoria(){
-        FWong guonsote = new FWong(0, 250, 250, "WongMayor.png");
+    private void muestraHistoria()
+    {
+        FWong guonsote = new FWong(0, 250, 250, "WongMayor.png");   //Crea el objeto Wongsote
+        addObject(guonsote, 250, 250);                              //Añade el personaje Wongsote, sólo para narrar la historia, seguro hay forma de optimizar esta cochinada...
         do{ muestraTexto("texto1.png"); }while(Greenfoot.isKeyDown("enter")==false);
         do{ muestraTexto("texto2.png"); }while(Greenfoot.isKeyDown("enter")==false);
         do{ muestraTexto("texto3.png"); }while(Greenfoot.isKeyDown("enter")==false);
         do{ muestraTexto("texto4.png"); }while(Greenfoot.isKeyDown("enter")==false);
+        removeObject(guonsote);
+    }
+    
+    protected void colocaPuertas()
+    {
+        addObject(puertas[0], 50, 330);
+        addObject(puertas[1], 250, 330);
+        addObject(puertas[2], 425, 330);
+        addObject(puertas[3], 350, 330);
+        addObject(puertas[4], 600, 330);
     }
 }

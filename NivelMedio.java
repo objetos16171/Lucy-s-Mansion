@@ -9,6 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 class NivelMedio extends Boton
 {
     private Jugador player;
+    private Escenario mundoSig;
     
     public NivelMedio(String nombreBoton)
     {
@@ -24,7 +25,8 @@ class NivelMedio extends Boton
         if(Greenfoot.mouseClicked(this))
         {
             player = new Jugador(2, 425, 380, "Lucy0.png");
-            mundoSig = new Recepcion("FondoRecepcion.png", 4, player, false);
+            mundoSig = new Recepcion();
+            mundoSig.setJugador(player);
             Greenfoot.setWorld(mundoSig);
         }
     }    

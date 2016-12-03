@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Pastilla
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Pastilla\ here.\r\n\ \r\n\ @author\ Hoshi\ \r\n\ @version\ 1.1.14.11.16\r\n
+comment1.params=
+comment1.target=Pastilla()
+comment1.text=\r\n\ Constructor\ que\ coloca\ la\ imagen\ nwn\r\n\ @author\ Aurora\r\n\ @version\ 1.2.23.11.16\r\n
+comment2.params=
+comment2.target=void\ modifica()
+comment2.text=\r\n\ \ Metodo\ modifica\ ->\ modifica\ los\ atributos\ del\ jugador\ y\ la\ pastilla\ cada\ cierto\ tiempo\ n.n\r\n\ \ @author\ Aurora\r\n\ \ @version\ 1.5.23.11.16\r\n
+numComments=3

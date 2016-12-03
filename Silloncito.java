@@ -3,14 +3,21 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class Silloncito here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Aurora 
+ * @version 1.2.21.11.16
  */
 public class Silloncito extends Utileria
 {
-    public Silloncito(int x, int y, String cadena)
-    { 
-        super(x, y, cadena);
+    private int danio = 0;
+
+    /**
+     *  Constructor que coloca la imagen nwn
+     *  @author Aurora
+     *  @version 1.2.21.11.16
+     */
+    public Silloncito()
+    {
+        super("sofá.png");
     }
     
     /**
@@ -21,4 +28,37 @@ public class Silloncito extends Utileria
     {
         // Add your action code here.
     }    
+    
+    /**
+     * Método para comprobar si el sillón ha sido destruido, si es así te dará una pastilla o muffin para recuperar vida.
+     * @author Aurora
+     * @version 1.2.21.11.16
+     */
+    public void sillonDestruido()
+    {
+       int aleatorio = Greenfoot.getRandomNumber(5);
+       
+       if(aleatorio == 1)
+       {
+             getWorld().addObject(new Pastilla(), 200, 200);
+       }
+       else if(aleatorio == 0)
+       {
+            getWorld().addObject(new Muffin(), 200, 200);
+       }
+       
+       getWorld().removeObject(this);
+    }
+    
+    public void getDanio()
+    {
+        if(isTouching(Jugador.class))
+            {
+                danio++;
+                if(danio >= 3)
+                {
+                    sillonDestruido();
+                }
+            }
+    }
 }

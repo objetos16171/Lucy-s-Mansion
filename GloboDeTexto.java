@@ -42,7 +42,7 @@ public class GloboDeTexto extends Actor
      * Método sin parámetros que regresa la posición en X de la imagen.
      * @author Aurora
      * @version 1.1.09.11.16
-     */
+     **/
     public int getPosX()
     {
         return posX;

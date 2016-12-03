@@ -3,14 +3,23 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class Maguey here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Algo aquí no va a funcionar bien
+ * 
+ * @author Aurora 
+ * @version 1.2.21.11.16
  */
 public class Maguey extends Utileria
 {
-    public Maguey(int x, int y, String cadena)
-    { 
-        super(x, y, cadena);
+    private int danio = 0;
+    
+    /**
+     *  Constructor que coloca la imagen nwn
+     *  @author Aurora
+     *  @version 1.2.21.11.16
+     */
+    public Maguey()
+    {
+        super("maguey.png");   
     }
     
     /**
@@ -19,6 +28,29 @@ public class Maguey extends Utileria
      */
     public void act() 
     {
-        // Add your action code here.
+        getDanio();
     }    
+    
+    /**
+     * Método para comprobar si el maguey ha sido destruido, si es así te dará la llave final.
+     * @author Aurora
+     * @version 1.2.21.11.16
+     */
+    private void getMagueyDestruido()
+    {
+		getWorld().addObject(new Llave(), 200, 200);
+		getWorld().removeObject(this);
+    }
+    
+    private void getDanio()
+    {
+        if(isTouching(Jugador.class))
+        {
+            danio++;
+            if(danio >= 3)
+            {
+                getMagueyDestruido();
+            }
+        }
+    }
 }

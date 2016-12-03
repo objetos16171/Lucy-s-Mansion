@@ -20,7 +20,7 @@ class Jugador extends Personaje
     public Jugador(int atk, int posX, int posY, String nomImg)
     {
         super(atk, posX, posY, nomImg);
-        nivel = 0;
+        nivel = -1;             //Inicia en -1 para poder mostrar la historia, despues de mostrar la historia, se hace 0
     }
     
     /**
@@ -33,6 +33,7 @@ class Jugador extends Personaje
         {
             golpea(1);
         }
+        
         if(Greenfoot.isKeyDown("x"))
         {
             golpea(2);
@@ -49,6 +50,14 @@ class Jugador extends Personaje
     void setNivel(int nivelNuevo)
     {
         nivel = nivelNuevo;
+    }
+    
+    /**
+     * getNivel - Este método devolverá el nivel que tiene el jugador al momento de que la puerta se lo pregunte
+     */
+    int getNivel()
+    {
+        return nivel;
     }
     
     /**
@@ -90,7 +99,8 @@ class Jugador extends Personaje
             isAttack = true;
             setAnimacion("golpeaParaguas");
             isAttack = false;
-        }else if(tipo == 2)        //Si no, el golpe será escupiendo cruz
+        }
+        else if(tipo == 2)        //Si no, el golpe será escupiendo cruz
         {
             isAttack = true;
             setAnimacion("disparaCruz");

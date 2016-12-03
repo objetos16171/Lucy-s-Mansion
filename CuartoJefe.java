@@ -11,7 +11,7 @@ public class CuartoJefe extends Escenario{
      * Constructor for objects of class CuartoJefe.
      * 
      */
-    public CuartoJefe(String nombreFondo, int numPuertas, Jugador jug){
-        super(nombreFondo, numPuertas, jug);        
+    public CuartoJefe(){
+        super("CuartoJefe.png");        
     }
 }

@@ -11,8 +11,21 @@ public class CuartoMaguey extends Escenario{
      * Constructor for objects of class CuartoMaguey.
      * 
      */
-    public CuartoMaguey(String nombreFondo, int numPuertas, Jugador jug){
-        super(nombreFondo, numPuertas, jug);        
+    public CuartoMaguey()
+    {
+        super("FondoCuartoMaguey.png");        
+        iniciaPuertas();
+        colocaPuertas();
+    }
+    
+    protected void iniciaPuertas()
+    {
+        puertas[0] = new Puerta(7, 0, 5);
+    }
+    
+    protected void colocaPuertas()
+    {
+        addObject(puertas[0], 50, 330);
     }
 }
 

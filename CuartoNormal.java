@@ -11,7 +11,7 @@ public class CuartoNormal extends Escenario{
      * Constructor for objects of class Cuarto.
      * 
      */
-    public CuartoNormal(String nombreFondo, int numPuertas, Jugador jug){
-        super(nombreFondo, numPuertas, jug);        
+    public CuartoNormal(){
+        super("FondoCuartoNormal.png");        
     }
 }
