@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Presentacion
+comment0.text=\r\n\ ---------------------------------Terminada---------------------------------\r\n\ Esta\ clase\ hereda\ de\ World,\ su\ objetivo\ es\ que\ en\ el\ mundo\ Intro\ pueda\r\n\ cambiar\ al\ fondo\ con\ mensaje,\ el\ t\u00EDtulo\ del\ juego\ y\ presionar\ una\ tecla.\r\n\ \r\n\ @author\ Dami\u00E1n\ "Mad"\ Mart\u00EDnez\r\n\ @author\ Aurora\ "Hoshi"\ Gonzalez\r\n\ @author\ Lucy\ "LadyBug"\ C\u00E1rdenas\r\n\ \r\n\ @version\ 1.4\:30.11.16\r\n
+comment1.params=
+comment1.target=Presentacion()
+comment1.text=\r\n\ Constructor\ para\ objetos\ de\ la\ clase\ Intro.\r\n\ \r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Act\ -\ aqu\u00ED\ est\u00E1\ lo\ que\ se\ quiere\ que\ el\ actor\ haga.\ Este\ m\u00E9todo\ es\r\n\ llamado\ cada\ que\ los\ botones\ 'Act'\ o\ 'Run'\ son\ presionados.\ Un\ ciclo.\r\n
+comment3.params=
+comment3.target=void\ setFondo()
+comment3.text=\r\n\ setFondo\ -\ Este\ m\u00E9todo\ es\ usado\ para\ cambiar\ lo\ que\ se\ presentar\u00E1\ en\ la\ pantalla\r\n\ Utiliza\ una\ bandera\ para\ saber\ cual\ es\ el\ fondo\ que\ se\ presenta\ actualmente.\r\n
+comment4.params=
+comment4.target=void\ setMundo()
+comment4.text=\r\n\ setMundo\ -\ Este\ m\u00E9todo\ es\ usado\ para\ cambiar\ el\ mundo\ \r\n\ actual\ por\ el\ siguiente,\ en\ este\ caso,\ el\ men\u00FA\r\n
+numComments=5

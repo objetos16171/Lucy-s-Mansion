@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=IniciaJuego
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ IniciaJuego\ here.\r\n\ \r\n\ @author\ Dami\u00E1n\ "Mad"\ Mart\u00EDnez\r\n\ @version\ 1.0.15.11.16\r\n
+comment1.params=nombreImagen
+comment1.target=IniciaJuego(java.lang.String)
+comment2.params=
+comment2.target=void\ act()
+numComments=3

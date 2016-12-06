@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Pasillo
+comment0.text=\r\n\ clase\ Pasillo\r\n\ clase\ pasillo\ se\ encarga\ de\ hacer\ las\ modificaciones\ de\ la\ super\ clase\ pasillo\r\n\ hace\ el\ arreglo\ de\ puertas\r\n\ \r\n\ @author\ Dami\u00E1n\ "Mad"\ Mart\u00EDnez\r\n\ @version\ 1.0\ 22/11/16\r\n
+comment1.params=
+comment1.target=Pasillo()
+comment1.text=\r\n\ Constructor\ para\ objetos\ de\ la\ clase\ Pasillo.\r\n\ aqu\u00ED\ se\ maneja\ el\ numero\ de\ puertas\ y\ el\ jugador\ el\ cual\ deber\u00E1\ de\ aparecer\ en\ este\ mundo\r\n\ \r\n
+numComments=2

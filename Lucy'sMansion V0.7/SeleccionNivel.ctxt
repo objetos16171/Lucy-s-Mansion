@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=SeleccionNivel
+comment0.text=\r\n\ Esta\ clase\ muetra\ los\ botones\ y\ el\ fondo\ para\ la\ selecci\u00F3n\ de\ nivel.\r\n\ \r\n\ @author\ Dami\u00E1n\ "Mad"\ Mart\u00EDnez\r\n\ @author\ Aurora\ "Hoshi"\ Gonzalez\r\n\ @author\ Lucy\ "LaGuacamaya"\ C\u00E1rdenas\r\n\ \r\n\ @version\ 1.4\:15.11.16\r\n
+comment1.params=
+comment1.target=SeleccionNivel()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ SeleccionNivel.\r\n\ \r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ act\ -\ Ciclo\ principa,\ aqu\u00ED\ va\ lo\ que\ se\ quiere\ que\ el\ mundo/actores\ hagan\r\n
+numComments=3

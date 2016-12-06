@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=GloboDeTexto
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Globo_de_texto\ here.\r\n\ \r\n\ @author\ Dami\u00E1n\ "Mad"\ Mart\u00EDnez\r\n\ @author\ Aurora\ "Hoshi"\ Gonzalez\r\n\ @author\ Lucy\ "LadyBug"\ C\u00E1rdenas\r\n\ \r\n\ @version\ 1.0\:31.10.16\r\n
+comment1.params=str
+comment1.target=GloboDeTexto(java.lang.String)
+comment1.text=\r\n\ Constructor\ que\ recibe\ una\ cadena\ para\ abrir\ una\ imagen.\r\n\ @author\ Aurora\r\n\ @version\ 1.1-09.11.16\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ Globo_de_texto\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+numComments=3

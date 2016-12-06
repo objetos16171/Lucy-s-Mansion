@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=MenuPrincipal
+comment0.text=\r\n\ ---------------------------------TERMINADA-------------------------------\r\n\ Esta\ clase\ es\ un\ Mundo,\ que\ comprende\ el\ men\u00FA\ principal\ del\ juego.\r\n\ Con\ botoncitos\ y\ asi\ bien\ bonita\ la\ cosa\r\n\ \r\n\ @author\ Dami\u00E1n\ "Mad"\ Mart\u00EDnez\r\n\ @author\ Aurora\ "Hoshi"\ Gonzalez\r\n\ @author\ Lucy\ "LadyBug"\ C\u00E1rdenas\r\n\ \r\n\ @version\ 1.5\:30.11.16\r\n
+comment1.params=
+comment1.target=MenuPrincipal()
+comment1.text=\r\n\ Constructor\ para\ objetos\ de\ la\ clase\ MenuPrincipal.\r\n\ Que\ en\ s\u00ED,\ en\ el\ proyecto,\ s\u00F3lo\ ser\u00E1\ 1.\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Act\ -\ aqu\u00ED\ est\u00E1\ lo\ que\ se\ quiere\ que\ el\ mundo\ haga.\ Este\ m\u00E9todo\ es\r\n\ llamado\ cada\ que\ los\ botones\ 'Act'\ o\ 'Run'\ son\ presionados.\ Un\ ciclo.\r\n
+comment3.params=
+comment3.target=void\ dibujaMenu()
+comment3.text=\r\n\ dibujaMenu\ -\ M\u00E9todo\ que\ se\ encarga\ de\ dibujar\ el\ men\u00FA\ principal\ y\ de\ a\u00F1adir\ los\ botones.\r\n
+numComments=4

@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Fantasma
+comment0.text=\r\n\ no\ entiendoni\ madres\ \:I\r\n\ Write\ a\ description\ of\ class\ Fantasma\ here.\r\n\ \r\n\ @author\ Dami\u00E1n\ "Mad"\ Mart\u00EDnez\r\n\ @author\ Aurora\ "Hoshi"\ Gonzalez\r\n\ @author\ Lucy\ "LadyBug"\ C\u00E1rdenas\r\n\ \r\n\ @version\ 1.0\:31.10.16\r\n
+comment1.params=atk\ stdDer\ stdIzq\ atkDer\ atkIzq\ movDer\ movIzq
+comment1.target=Fantasma(int,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ ataca()
+comment3.text=\r\n\ Este\ metodo\ va\ a\ controlar\ la\ variable\ secuencia,\ y\ el\ modo\ de\ atacar,\ y\ puede\ ser\ variable...\ o\ algo\ asi...\ ademas,\ debe\ de\ poner\ el\ reloj\ en\ cero.\r\n\ Hace\ un\ random\ para\ ver\ si\ solo\ va\ a\ atacar\ o\ va\ a\ hacer\ una\ secuencia.\ Si\ activa\ una\ secuencia\ se\ debe\ poner\ el\ contador\ de\ secuencia\ en\ alguna\ \r\n\ cantidad,\ y\ luego\ restarle\ por\ cada\ ataque\ logrado.\r\n\ \r\n\ Se\ va\ a\ requerir\ de\ una\ funcion\ extra\ para\ generar\ o\ poner\ la\ animacion\ de\ ataque,\ y\ luego\ lanzar\ el\ disparo,\ cuando\ esa\ funcion\ (ya\ sea\ que\ se\ deje\r\n\ en\ la\ clase\ personaje,\ o\ aqui\ mismo\ en\ esta\ clase)\ termine,\ manda\ una\ se\u00F1al\ y\ alli\ es\ cuando\ se\ resta\ el\ contador.\ Ademas\ esta\ funcion\ va\ a\ jugar\ con\r\n\ la\ posicion\ del\ fantasma\ y\ su\ direccion\ para\ que\ se\ este\ teletransportando.\r\n\ \r\n\ NOTA\:\ Hay\ que\ cambiar\ la\ documentacion\ de\ este\ metodo.\r\n
+comment4.params=
+comment4.target=void\ muevete()
+comment4.text=\r\n\ \ Este\ metodo\ va\ controlar\ el\ movimiento\ de\ los\ fantasmas...\ o\ eso\ se\ supone,\ debe\ activar\ la\ variable\ isMov\ cuando\ el\ jugador\ quede\ muy\ lejos,\ y\ desactivarla\r\n\ \ cuando\ entre\ en\ el\ rango\ de\ disparo\ del\ fantasma.\ Si\ el\ fantasma\ le\ queda\ poca\ vida,\ debe\ de\ elevarse,\ y\ solo\ bajar\ cuando\ vaya\ a\ atacar.\ Ademas,\ despues\ de\ \r\n\ \ terminar\ cada\ movimiento\ se\ debe\ resetear\ el\ reloj.\r\n
+numComments=5

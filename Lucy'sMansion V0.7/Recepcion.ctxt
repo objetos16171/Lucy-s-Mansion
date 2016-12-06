@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Recepcion
+comment0.text=\r\n\ -------------------------------------TERMINADA------------------------------------------------\r\n\ Escenaio\ de\ recepcion,\ Muestra\ la\ historia\ y\ es\ el\ primer\ escenario\ en\ el\ que\ el\ jugador\ tendr\u00E1\ contacto.\ \r\n\ \r\n\ @author\ Damian\ "Mad"\ Mart\u00EDnez\r\n\ @version\ 1.8\:30.11.16\r\n
+comment1.params=
+comment1.target=Recepcion()
+comment1.text=\r\n\ Este\ es\ el\ constructor\ de\ la\ recepci\u00F3n.\r\n\ \r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Act\ -\ Hace\ lo\ que\ se\ le\ pide\ que\ se\ haga\ para\ cada\ objeto\ creado\ de\ la\ clase\r\n\ \r\n
+comment3.params=
+comment3.target=void\ iniciaPuertas()
+comment3.text=\r\n\ iniciaPuertas\ -\ Inicializa\ el\ n\u00FAmero\ de\ puertas\ para\ tal\ Escenario\ (Recepcion\ en\ este\ caso)\r\n\ S\u00F3lo\ las\ mantiene\ preparadas.\r\n\ \r\n
+comment4.params=nombreImagen
+comment4.target=void\ muestraTexto(java.lang.String)
+comment4.text=\r\n\ muestraTexto\ -\ Crea\ un\ nuevo\ objeto\ de\ la\ clase\ GloboDeTexto\ y\ lo\ coloca\ en\ pantalla\r\n
+comment5.params=
+comment5.target=void\ muestraHistoria()
+comment5.text=\r\n\ muestraHistoria\ -\ se\ encarga\ de\ mostrar\ globos\ de\ testo\ con\ la\ historia\ principal,\ y\ un\ wongsote\r\n
+comment6.params=
+comment6.target=void\ colocaPuertas()
+numComments=7

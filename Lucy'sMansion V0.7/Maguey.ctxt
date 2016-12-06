@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Maguey
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Maguey\ here.\r\n\ \r\n\ Algo\ aqu\u00ED\ no\ va\ a\ funcionar\ bien\r\n\ \r\n\ @author\ Aurora\ \r\n\ @version\ 1.2.21.11.16\r\n
+comment1.params=
+comment1.target=Maguey()
+comment1.text=\r\n\ \ Constructor\ que\ coloca\ la\ imagen\ nwn\r\n\ \ @author\ Aurora\r\n\ \ @version\ 1.2.21.11.16\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ Maguey\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment3.params=
+comment3.target=void\ getMagueyDestruido()
+comment3.text=\r\n\ M\u00E9todo\ para\ comprobar\ si\ el\ maguey\ ha\ sido\ destruido,\ si\ es\ as\u00ED\ te\ dar\u00E1\ la\ llave\ final.\r\n\ @author\ Aurora\r\n\ @version\ 1.2.21.11.16\r\n
+comment4.params=
+comment4.target=void\ getDanio()
+numComments=5
