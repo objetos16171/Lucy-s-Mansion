@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=Escenario
+comment0.text=\r\n\ Clase\ escenario,\ padre\ de\ las\ clases\ de\ cada\ uno\ de\ los\ escenarios.\r\n\ Los\ escenarios\ (Como\ Pasillo,\ CuartoNormal,\ etc.)\ heredar\u00E1n\ de\ aqu\u00ED\ la\ mayor\u00EDa\ de\ atributos\ y\r\n\ m\u00E9todos.\r\n\ En\ caso\ de\ ser\ necesarios,\ en\ las\ clases\ hijas\ se\ asignar\u00E1n\ m\u00E1s\ m\u00E9todos/atributos.\r\n\ \r\n\ @author\ Dami\u00E1n\ "Mad"\ Mart\u00EDnez\r\n\ @author\ Aurora\ "Hoshi"\ Gonzalez\r\n\ @author\ Lucy\ "LadyBug"\ C\u00E1rdenas\r\n\ \r\n\ @version\ 1.0\:31.10.16\r\n
+comment1.params=nombreFondo
+comment1.target=Escenario(java.lang.String)
+comment1.text=\r\n\ Constructor\ de\ objetos\ de\ la\ clase\ Escenario.\r\n\ \r\n
+comment2.params=direccion
+comment2.target=void\ reubicaJugador(int)
+comment2.text=\r\n\ \ reubicaJugador\ -\ Toma\ al\ jugador\ y\ reinicia\ sus\ posiciones\ a\ la\ derecha\ o\ izquierda\ de\ la\ pantalla.\r\n\ \ El\ parametro\ direccion\ sera\ 1\ o\ -1,\ representando\ que\ 1\ se\ rein\ ician\ las\ posiciones\ a\ la\ \r\n\ \ derecha\ y\ -1\ reinicia\ las\ posiciones\ a\ la\ izquierda.\r\n
+comment3.params=
+comment3.target=Puerta[]\ getArregloPuertas()
+comment4.params=arrayPuertas
+comment4.target=void\ setArregloPuertas(Puerta[])
+comment5.params=
+comment5.target=int\ getNumeroPuertas()
+comment6.params=
+comment6.target=Jugador\ getJugador()
+comment7.params=jugador
+comment7.target=void\ setJugador(Jugador)
+comment8.params=
+comment8.target=void\ iniciaPuertas()
+comment9.params=
+comment9.target=void\ colocaPuertas()
+numComments=10

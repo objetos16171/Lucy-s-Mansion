@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Jugador
+comment0.text=\r\n\ Clase\ jugador.\r\n\ Hereda\ de\ personaje,\ ser\u00E1\ controlado\ por\ el\ usuario\r\n\ \r\n\ @author\ Dami\u00E1n\ "Mad"\ Mart\u00EDnez\r\n\ @author\ Aurora\ "Hoshi"\ Gonzalez\r\n\ @author\ Lucy\ "LadyBug"\ C\u00E1rdenas\r\n\ \r\n\ @version\ 1.0\:31.10.16\r\n
+comment1.params=atk\ posX\ posY\ nomImg
+comment1.target=Jugador(int,\ int,\ int,\ java.lang.String)
+comment1.text=\r\n\ Constructor\ de\ objetos\ de\ la\ clase\ Jugador\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Act\ -\ Es\ lo\ que\ el\ usuario\ har\u00E1\ mientras\ el\ juego\ est\u00E9\ corriendo.\r\n\ siempre\ y\ cuando\ exista\ en\ el\ mundo.\r\n
+comment3.params=nivelNuevo
+comment3.target=void\ setNivel(int)
+comment3.text=\r\n\ setNivel\ -\ Este\ m\u00E9todo\ s\u00F3lo\ asigna\ un\ nivel\ (seg\u00FAn\ la\ llave)\ al\ jugador\r\n\ @version\ 1.0.20.11.16\r\n\ \r\n\ Notas\:\ Hace\ falta\ considerar\ si\ el\ usuario\ tiene\ un\ nivel\ mayor,\ no\ puede\ hacerse\ downgrade\r\n\ o\ sea,\ si\ el\ jugador\ tiene\ nivel\ 3\ y\ consigue\ (por\ alguna\ raz\u00F3n)\ una\ llave\ de\ nivel\ 2,\ no\ lo\ deje\r\n
+comment4.params=
+comment4.target=int\ getNivel()
+comment4.text=\r\n\ getNivel\ -\ Este\ m\u00E9todo\ devolver\u00E1\ el\ nivel\ que\ tiene\ el\ jugador\ al\ momento\ de\ que\ la\ puerta\ se\ lo\ pregunte\r\n
+comment5.params=
+comment5.target=void\ muevete()
+comment5.text=\r\n\ muevete\ -\ Este\ m\u00E9todo\ se\ encarga\ de\ colocar\ las\ animaciones\ correspondientes\ al\ bot\u00F3n\ presionado,\ aparte\r\n\ de\ mover\ en\ pantalla\ al\ personaje\r\n\ @version\ 1.0.20.11.16\r\n\ \r\n\ Notas\:\ le\ hace\ falta\ que\ se\ considere\ cuando\ el\ jugador\ est\u00E1\ en\ alguna\ de\ las\ esquinas\ de\ la\ pantalla.\r\n
+comment6.params=tipo
+comment6.target=void\ golpea(int)
+comment6.text=\r\n\ golpea\ -\ \u00C9ste\ m\u00E9todo\ s\u00F3lo\ pondr\u00E1\ la\ animaci\u00F3n\ del\ golpe\ y\ activar\u00E1\ la\ variable\ de\ ataque,\ para\ poder\r\n\ infligir\ un\ da\u00F1o\ en\ el\ enemigo\r\n
+numComments=7

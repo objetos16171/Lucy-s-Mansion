@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Utileria
+comment0.text=\r\n\ SuperClase\ para\ los\ muebles,\ no\ es\ gran\ cosa,\ pero\ de\ aqu\u00ED\ habr\u00E1\ distintos\ muebles,\ im\u00E1genes\ y\ posiciones.\r\n\ \r\n\ @author\ Dami\u00E1n\ "Mad"\ Mart\u00EDnez\r\n\ @author\ Aurora\ "Hoshi"\ Gonzalez\r\n\ @author\ Lucy\ "LadyBug"\ C\u00E1rdenas\r\n\ \r\n\ @version\ 1.0\:03.11.16\r\n
+comment1.params=cadena
+comment1.target=Utileria(java.lang.String)
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ dropObj()
+comment3.text=\r\n\ Drop\r\n\ se\ usa\ un\ random\ para\ ver\ si\ tiene\ un\ elemento\ de\ la\ subclase\ PowerUp\r\n\ seg\u00FAn\ sea\ el\ caso\ aperecera\ una\ llave,un\ muffin\ o\ una\ pastilla\r\n\ @author\ Lucy\ C\u00E1rdenas\r\n\ \r\n\ @version\ 15.11.16\ \r\n
+comment4.params=
+comment4.target=void\ explota()
+comment4.text=\r\n\ Explota\r\n\ sirve\ para\ checar\ que\ si\ el\ objeto\ recibe\ 3\ golpes\ se\ destruya\ \ \ \r\n\ se\ elimina\ la\ mesita,\ la\ sillita,el\ silloncito,el\ maguey.\ \ \ \ \ \ \ \ \r\n\ @author\ Lucy\ C\u00E1rdenas\r\n\ \r\n\ @version\ 16.11.16\ \r\n
+comment5.params=
+comment5.target=void\ destruye()
+comment5.text=\r\n\ destruye\ -\ Se\ encarga\ de\ destruir\ el\ objeto,\ en\ animacion\ y\ en\ memoria\r\n\ Tambi\u00E9n\ se\ encarga\ de\ ver\ si\ se\ tira\ alg\u00FAn\ objeto\r\n
+numComments=6

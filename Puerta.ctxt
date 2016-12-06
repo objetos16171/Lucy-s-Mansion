@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=Puerta
+comment0.text=\r\n\ Es\ la\ clase\ encargada\ de\ cargar\ los\ escenarios\ del\ juego.\ Los\ objetos\ de\ est\u00E1\ clase\ ser\u00E1n\ los\ encargados\ de\r\n\ decir\ al\ mundo\ si\ se\ puede\ acceder\ al\ siguiente\ mundo\ (O\ al\ que\ se\ quiere\ accesar\ en\ todo\ caso)\r\n\ S\u00F3lo\ servir\u00E1\ para\ verificar\ si\ se\ puede\ pasar,\ y\ pa'\ dibujar\ una\ vil\ puerta/escalera\ en\ pantasha\r\n\ \r\n\ \r\n\ Falta\ algo\ que\ se\ aplique\ a\ jugador\ para\ que\ sepa\ de\ que\ cuarto\ est\u00E1\ saliendo\ y\ a\ cual\ est\u00E1\ llegando\r\n\ Para\ saber\ en\ que\ ubicaci\u00F3n\ debe\ comenzar\ en\ la\ siguiente\ habitaci\u00F3n\r\n\ Ta\ complejo\ pero\ facilitar\u00E1\ el\ trabajo\ del\ cpu\ un\ shorro,\ igual\ shingos\ de\ mswitchs\ anidados\r\n\ m\u00E1s\ atributos\ pero\ ni\ pedo,\ con\ que\ todo\ salga\ shido\r\n\ P.D.\:\ No\ dormir\u00E1s\ \:'v\ \r\n\ \r\n\ \r\n\ @author\ Dami\u00E1n\ "Mad"\ Mart\u00EDnez\r\n\ @version\ 1.7\:30.11.16\r\n
+comment1.params=haciaD\ subDes\ nivel
+comment1.target=Puerta(int,\ int,\ int)
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Act\ -\ hace\ lo\ que\ quiero\ que\ la\ vaina\ Puerta\ haga.\ Wiririri\r\n\ Comentarios...\r\n
+comment3.params=
+comment3.target=void\ decideMundoSiguiente()
+comment3.text=\r\n\ decideMundoSiguiente\ -\ Este\ m\u00E9todo\ est\u00E1\ encargado\ de\ decidir\ el\ siguiente\ mundo\ a\ crear,\ \r\n\ en\ base\ al\ identificador\ que\ recibe\ el\ objeto\ de\ la\ clase\ Puerta\ por\ parte\r\n\ del\ mundo\ antig\u00FCo.\r\n
+comment4.params=des\ sub
+comment4.target=Escenario\ iniciaMundoSiguiente(int,\ int)
+comment4.text=\r\n\ iniciaMundoSiguiente\ -\ Este\ m\u00E9todo\ se\ encarga\ de\ iniciar\ lo\ mundos\ correctamente,\ si,\ es\ un\ switch\ anidado\ en\ otro,\ pero\ aunque\ no\ lo\r\n\ parezca,\ es\ la\ mejor\ manera\ de\ conservar\ memoria.\r\n\ Regresa\ un\ Escenario\ que\ creara\ \u00E9l\ mismo\r\n
+comment5.params=mundoSig
+comment5.target=void\ setMundoSiguiente(Escenario)
+comment5.text=\r\n\ setMundoSiguiente\ -\ S\u00F3lo\ hace\ el\ cambio\ de\ mundo\r\n
+numComments=6

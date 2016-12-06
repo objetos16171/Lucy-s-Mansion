@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Fantasma
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Fantasma\ here.\r\n\ \r\n\ @author\ Dami\u00E1n\ "Mad"\ Mart\u00EDnez\r\n\ @author\ Aurora\ "Hoshi"\ Gonzalez\r\n\ @author\ Lucy\ "LadyBug"\ C\u00E1rdenas\r\n\ \r\n\ @version\ 1.0\:31.10.16\r\n
+comment1.params=atk\ posX\ posY\ nomImg
+comment1.target=Fantasma(int,\ int,\ int,\ java.lang.String)
+numComments=2

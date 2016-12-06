@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=GloboDeTexto
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Globo_de_texto\ here.\r\n\ \r\n\ @author\ Dami\u00E1n\ "Mad"\ Mart\u00EDnez\r\n\ @author\ Aurora\ "Hoshi"\ Gonzalez\r\n\ @author\ Lucy\ "LadyBug"\ C\u00E1rdenas\r\n\ \r\n\ @version\ 1.0\:31.10.16\r\n
+comment1.params=
+comment1.target=void\ act()
+comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Globo_de_texto\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment2.params=str
+comment2.target=GloboDeTexto(java.lang.String)
+comment2.text=\r\n\ Constructor\ que\ recibe\ una\ cadena\ para\ abrir\ una\ imagen.\r\n\ @author\ Aurora\r\n\ @version\ 1.1-09.11.16\r\n
+comment3.params=
+comment3.target=int\ getPosX()
+comment3.text=\r\n\ M\u00E9todo\ sin\ par\u00E1metros\ que\ regresa\ la\ posici\u00F3n\ en\ X\ de\ la\ imagen.\r\n\ @author\ Aurora\r\n\ @version\ 1.1.09.11.16\r\n
+comment4.params=
+comment4.target=int\ getPosY()
+comment4.text=\r\n\ M\u00E9todo\ sin\ par\u00E1metros\ que\ regresa\ la\ posici\u00F3n\ en\ Y\ de\ la\ imagen.\r\n\ @author\ Aurora\r\n\ @version\ 1.1.09.11.16\r\n
+numComments=5
