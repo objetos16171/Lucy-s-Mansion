@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=MenuInstrucciones
+comment0.text=\r\n\ -----------------------------TERMINADA------------------------------------\r\n\ Clase\ men\u00FA\ intrucciones,\ se\ encarga\ de\ dibujar\ el\ menu\ de\ instrucciones\ y\ ya.\r\n\ \r\n\ @author\ Aurora\ "Hoshi"\ Gonzales\r\n\ @version\ 1.0.15.11.16\ \r\n
+comment1.params=
+comment1.target=MenuInstrucciones()
+comment1.text=\r\n\ Constructor\ de\ objetos\ de\ la\ clase\ MenuInstrucciones.\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ act\ -\ El\ ciclo\ principal\ que\ repetira\ una\ y\ otra\ vez\r\n
+numComments=3

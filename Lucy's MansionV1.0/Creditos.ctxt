@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Creditos
+comment0.text=\r\n\ ---------------------------------TERMINADA--------------------------------\r\n\ Esta\ clase\ se\ encarga\ de\ mostrar\ los\ cr\u00E9ditos,\ o\ sea\ quien\ hizo\ este\ juego.\r\n\ \r\n\ @author\ Aurora\ "Hoshi"\ Gonzales\r\n\ @version\ 1.0\:22.11.16\r\n
+comment1.params=
+comment1.target=Creditos()
+comment1.text=\r\n\ Constructor\ de\ objetos\ de\ la\ clase\ Creditos.\r\n
+comment2.params=
+comment2.target=void\ act()
+numComments=3
